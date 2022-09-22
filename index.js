@@ -1,4 +1,4 @@
-var guestsArray = ["David","Alny","Gwen","Nibila", "Lia", "Dany", "Tabe", "Vega", "Paco", "Xime", "Linden", "Liz", "Fernando", "Cesar", "Elsa Bueso", "Brigitte", "Fer"];
+var guestsArray = ["David","Alny","Gwen","Nibila", "Lia", "Dany", "Tabe", "Vega", "Paco", "Xime", "Linden", "Liz", "Fernando", "Cesar", "Obama", "Brigitte", "Fer"];
 var counter = 0;
 var currentName = document.getElementById("guest");
 var arraylength = guestsArray.length - 1;
