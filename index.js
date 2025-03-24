@@ -1,17 +1,11 @@
-var guestsArray = ["David","Alny","Gwen","Nibila", "Lia", "Dany", "Tabe", "Vega", "Paco", "Xime", "Linden", "Liz", "Fernando", "Cesar", "Obama", "Brigitte", "Fer"];
-var counter = 0;
-var currentName = document.getElementById("guest");
-var arraylength = guestsArray.length - 1;
+// Get the 'data' parameter from the URL
+const params = new URLSearchParams(window.location.search);
+const encodedData = params.get("data");
 
-function display_names() {
-    if(counter === arraylength){
-        counter = 0;
-    }
-    else {
-        counter++;  
-    }
-    currentName.innerHTML = guestsArray[counter];
+if (encodedData) {
+    // Decode Base64 back to normal text
+    const decodedName = atob(encodedData);
+    
+    // Update the text
+    document.getElementById("person").innerText = `${decodedName}!`;
 }
-
-
-setInterval(display_names, 500)
