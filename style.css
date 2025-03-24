@@ -11,6 +11,7 @@
      background-image: url(splatThesenuts.jpg);
      background-size: auto 100%;
      background-repeat: repeat;
+     background-attachment: fixed;
  }
 
 .button {
