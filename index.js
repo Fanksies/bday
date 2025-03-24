@@ -7,5 +7,5 @@ if (encodedData) {
     const decodedName = atob(encodedData);
     
     // Update the text
-    document.getElementById("person").innerText = `${decodedName}!`;
+    document.getElementById("person").innerText = `${decodedName}`;
 }
